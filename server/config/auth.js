@@ -2,16 +2,18 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 
 export const generateToken = (id, role) => {
+  const secret = process.env.JWT_SECRET || 'taskflow_fallback_secret_32_chars_long_12345';
   return jwt.sign(
     { id, role },
-    process.env.JWT_SECRET,
+    secret,
     { expiresIn: process.env.JWT_EXPIRE || '7d' }
   );
 };
 
 export const verifyToken = (token) => {
   try {
-    return jwt.verify(token, process.env.JWT_SECRET);
+    const secret = process.env.JWT_SECRET || 'taskflow_fallback_secret_32_chars_long_12345';
+    return jwt.verify(token, secret);
   } catch (error) {
     return null;
   }
