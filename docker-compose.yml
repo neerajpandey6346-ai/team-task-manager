@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: ttm_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password_123
+      MYSQL_DATABASE: team_task_manager
+      MYSQL_USER: ttm_user
+      MYSQL_PASSWORD: ttm_password_123
+    ports:
+      - "3306:3306"
