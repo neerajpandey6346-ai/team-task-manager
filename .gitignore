@@ -1,9 +1,11 @@
 node_modules/
 .env
+**/.env
 dist/
 build/
-client/dist
-server/dist
+client/dist/
+server/dist/
 *.log
 .vscode/
 .idea/
+.DS_Store
