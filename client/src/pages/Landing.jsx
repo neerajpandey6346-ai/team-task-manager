@@ -43,9 +43,6 @@ function Landing() {
           <Link to="/signup" className="btn btn-primary px-8 py-4 text-lg w-full sm:w-auto shadow-[0_0_40px_rgba(99,102,241,0.4)]">
             Get Started Free
           </Link>
-          <Link to="/login" className="btn glass-panel px-8 py-4 text-lg w-full sm:w-auto hover:bg-white/10 dark:hover:bg-slate-800/80">
-            View Demo <LayoutDashboard className="w-5 h-5 ml-2 text-indigo-400" />
-          </Link>
         </div>
 
         {/* Feature Cards */}
