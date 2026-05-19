@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 
 export const generateToken = (id, role) => {
-  const secret = process.env.JWT_SECRET || 'taskflow_fallback_secret_32_chars_long_12345';
+  const secret = process.env.JWT_SECRET || 'taskify_fallback_secret_32_chars_long_12345';
   return jwt.sign(
     { id, role },
     secret,
@@ -12,7 +12,7 @@ export const generateToken = (id, role) => {
 
 export const verifyToken = (token) => {
   try {
-    const secret = process.env.JWT_SECRET || 'taskflow_fallback_secret_32_chars_long_12345';
+    const secret = process.env.JWT_SECRET || 'taskify_fallback_secret_32_chars_long_12345';
     return jwt.verify(token, secret);
   } catch (error) {
     return null;

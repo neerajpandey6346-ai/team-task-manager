@@ -16,7 +16,7 @@ function Landing() {
             <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-cyan-400 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
               <Sparkles className="w-5 h-5 text-white" />
             </div>
-            <span className="text-2xl font-bold tracking-tight text-slate-800 dark:text-white">TaskFlow</span>
+            <span className="text-2xl font-bold tracking-tight text-slate-800 dark:text-white">Taskify</span>
           </div>
           <div className="flex gap-4 items-center">
             <Link to="/login" className="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-cyan-400 font-medium transition-colors">

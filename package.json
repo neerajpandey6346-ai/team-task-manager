@@ -1,7 +1,7 @@
 {
   "name": "team-task-manager",
   "version": "1.0.0",
-  "description": "Production-ready Team Task Manager Application",
+  "description": "Production-ready Taskify Application",
   "main": "server.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",

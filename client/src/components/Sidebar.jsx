@@ -29,10 +29,10 @@ function Sidebar() {
       <div className="p-4 flex items-center justify-between border-b border-white/10 dark:border-slate-700/50 mb-4 h-16">
         {!isCollapsed && (
           <div className="flex items-center gap-2">
-             <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-400 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
+            <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-400 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
               <Sparkles className="w-4 h-4 text-white" />
             </div>
-            <span className="text-lg font-bold tracking-tight text-slate-800 dark:text-white">TaskFlow</span>
+            <span className="text-lg font-bold tracking-tight text-slate-800 dark:text-white">Taskify</span>
           </div>
         )}
         <button
@@ -48,11 +48,10 @@ function Sidebar() {
           <Link
             key={href}
             to={href}
-            className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-300 ${
-              isActive(href)
+            className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-300 ${isActive(href)
                 ? 'bg-indigo-500/10 dark:bg-indigo-500/20 text-indigo-600 dark:text-cyan-400 shadow-sm'
                 : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white'
-            }`}
+              }`}
             title={isCollapsed ? label : ''}
           >
             <Icon size={20} className={isActive(href) ? 'text-indigo-500 dark:text-cyan-400' : ''} />

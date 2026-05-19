@@ -5,8 +5,8 @@ import { useToast } from '../context/ToastContext'
 import Spinner from '../components/Spinner'
 
 function Login() {
-  const [email, setEmail] = useState('admin@example.com')
-  const [password, setPassword] = useState('Admin@123456')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
   const { login } = useAuth()
   const { showError, showSuccess } = useToast()
@@ -50,6 +50,7 @@ function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
+              autoComplete="off"
               required
             />
           </div>
@@ -61,6 +62,7 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
+              autoComplete="new-password"
               required
             />
           </div>

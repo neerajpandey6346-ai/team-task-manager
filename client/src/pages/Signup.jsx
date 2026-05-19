@@ -66,6 +66,7 @@ function Signup() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your name"
+              autoComplete="off"
               required
             />
           </div>
@@ -77,6 +78,7 @@ function Signup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
+              autoComplete="off"
               required
             />
           </div>
@@ -88,6 +90,7 @@ function Signup() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
+              autoComplete="new-password"
               required
             />
             <p className="text-xs text-gray-500 mt-1">

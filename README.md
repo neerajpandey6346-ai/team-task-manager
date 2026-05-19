@@ -1,6 +1,6 @@
-# 🚀 TaskFlow: Team Task Manager
+# 🚀 Taskify
 
-TaskFlow is a full-stack project management application designed for modern teams. It features a stunning **Glassmorphic UI**, robust role-based access control, and real-time dashboard analytics to help teams stay organized and productive.
+Taskify is a full-stack project management application designed for modern teams. It features a stunning **Glassmorphic UI**, robust role-based access control, and real-time dashboard analytics to help teams stay organized and productive.
 
 ## ✨ Key Features
 
@@ -103,7 +103,7 @@ npm run dev
 ---
 
 ## 🎨 UI Philosophy
-TaskFlow uses a **Glassmorphic** design language, characterized by:
+Taskify uses a **Glassmorphic** design language, characterized by:
 - **Translucency**: Frosted glass effects on cards and navigation.
 - **Vibrant Gradients**: Carefully curated HSL color palettes.
 - **Micro-animations**: Subtle hover states and transitions for a premium feel.
