@@ -29,9 +29,7 @@ function Sidebar() {
       <div className="p-4 flex items-center justify-between border-b border-white/10 dark:border-slate-700/50 mb-4 h-16">
         {!isCollapsed && (
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-400 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
-              <Sparkles className="w-4 h-4 text-white" />
-            </div>
+            <img src="/logo.png" alt="Taskify Logo" className="w-8 h-8 rounded-xl shadow-lg shadow-indigo-500/20 object-cover" />
             <span className="text-lg font-bold tracking-tight text-slate-800 dark:text-white">Taskify</span>
           </div>
         )}

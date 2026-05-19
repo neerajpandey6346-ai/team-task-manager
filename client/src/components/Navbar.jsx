@@ -32,9 +32,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center sm:hidden gap-2">
-             <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-400 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
-              <Sparkles className="w-4 h-4 text-white" />
-            </div>
+             <img src="/logo.png" alt="Taskify Logo" className="w-8 h-8 rounded-xl shadow-lg shadow-indigo-500/20 object-cover" />
           </div>
           
           <div className="hidden sm:block">
