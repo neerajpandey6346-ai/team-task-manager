@@ -31,22 +31,14 @@ function Landing() {
 
       {/* Hero Section */}
       <div className="relative max-w-7xl mx-auto px-6 pt-40 pb-20 text-center z-10 animate-fade-in">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-8 border border-indigo-500/30 shadow-inner">
-          <span className="relative flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
-          </span>
-          <span className="text-sm font-medium text-slate-700 dark:text-slate-200">v2.0 is now live!</span>
-        </div>
-
         <h1 className="text-6xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
-          Supercharge Your <br/>
+          Supercharge Your <br />
           <span className="text-gradient">Team Productivity</span>
         </h1>
         <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
           The ultimate platform to collaborate seamlessly, track progress in real-time, and deliver projects faster than ever before.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link to="/signup" className="btn btn-primary px-8 py-4 text-lg w-full sm:w-auto shadow-[0_0_40px_rgba(99,102,241,0.4)]">
             Get Started Free
